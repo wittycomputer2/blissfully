@@ -151,6 +151,28 @@ textarea.fill-in-block {
     width: calc(100% - 30px); /* Account for padding */
 }
 
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-lg);
+}
+
+.prev-btn, .next-btn, .download-pdf-btn {
+    background-color: var(--primary-purple);
+    color: var(--white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--body-size);
+    font-weight: var(--weight-semibold);
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover, .download-pdf-btn:hover {
+    background-color: var(--primary-purple-light);
+}
+
 footer {
     text-align: center;
     padding: var(--space-md);
